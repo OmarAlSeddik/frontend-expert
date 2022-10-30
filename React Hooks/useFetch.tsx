@@ -4,8 +4,10 @@ const useFetch = (url: string) => {
   const [isLoading, setIsLoading] = useState(true);
   const [responseJSON, setResponseJSON] = useState(null);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     let unmounted = false;
+
     const callFetch = async () => {
       setIsLoading(true);
       try {
@@ -21,7 +23,9 @@ const useFetch = (url: string) => {
       }
       setIsLoading(false);
     };
+
     callFetch();
+
     return () => {
       unmounted = true;
     };
