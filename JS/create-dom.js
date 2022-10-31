@@ -5,8 +5,10 @@ const createDom = (root) => {
       node.setAttribute(attribute, value);
     }
   }
-  root.children?.forEach((child) => {
-    node.append(typeof child === "string" ? child : createDom(child));
-  });
+  if (root.children != null) {
+    for (const child of root.children) {
+      node.append(typeof child === "string" ? child : createDom(child));
+    }
+  }
   return node;
 };
