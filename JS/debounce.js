@@ -11,7 +11,7 @@ const debounce = (callback, delay, immediate = false) => {
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
         callback.apply(this, args);
       }
-      // This is to keep track if we are waiting before calling the function again
+      // This is to keep track if we are waiting before calling the function again.
       timerID = null;
     }, delay);
   };
