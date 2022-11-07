@@ -1,5 +1,4 @@
 const testimonialContainer = document.getElementById("testimonial-container");
-
 const API_BASE_URL = "https://api.frontendexpert.io/api/fe/testimonials";
 const PAGE_SIZE = 5;
 
@@ -34,6 +33,7 @@ const fetchAndAppendTestimonials = () => {
 const createTestimonialsUrl = () => {
   // https://developer.mozilla.org/en-US/docs/Web/API/URL/URL
   const url = new URL(API_BASE_URL);
+  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/set
   url.searchParams.set("limit", PAGE_SIZE);
   if (afterID !== null) url.searchParams.set("after", afterID);
   return url;

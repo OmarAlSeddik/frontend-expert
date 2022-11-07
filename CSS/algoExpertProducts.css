@@ -1,0 +1,50 @@
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px 10px;
+}
+
+#algo-expert {
+  order: 3;
+  width: 75%;
+  margin: auto;
+  background-color: #626ee3;
+}
+
+#systems-expert {
+  order: 1;
+  width: 50%;
+  background-color: #890023;
+}
+
+#ml-expert {
+  order: 2;
+  width: 30%;
+  height: 75px;
+  background-color: #f37f1b;
+}
+
+#frontend-expert {
+  order: 4;
+  width: 40%;
+  margin-top: auto;
+  background-color: #11967e;
+}
+
+#programming-expert {
+  order: 5;
+  flex: 1 1 auto;
+  height: 75px;
+  background-color: #f21b3f;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
