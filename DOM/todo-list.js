@@ -14,7 +14,7 @@ const handleDelete = (event) => {
 
 const handleClick = () => {
   const todoItem = document.createElement("li");
-  
+
   const text = document.createElement("h2");
   text.textContent = todoInput.value;
   todoItem.appendChild(text);
